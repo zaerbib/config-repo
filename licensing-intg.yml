@@ -1,3 +1,5 @@
+exemple:
+    property: The intg config
 logging:
     level:
         web: debug
@@ -16,9 +18,10 @@ management:
         diskspace:
             enabled: true
 server:
-    port: 8091
+    port: 8081
 spring:
     datasource:
+        driver-class-name: org.postgresql.Driver
         password: licensing
         url: jdbc:postgresql://localhost:${DATABASE_SERVER_PORT}/licensing
         username: licensing
